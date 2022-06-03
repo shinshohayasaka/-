@@ -3,8 +3,6 @@
     <head>
         <meta charset="utf-8">
         <title>Blog</title>
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
     <body>
         <h1>ネーム　ブログ</h1>
@@ -13,6 +11,7 @@
                 <div class='post'>
                     <a href='/posts/{{ $post->id }}'><h2 class='title'>{{ $post->title }}</h2></a>
                     <p class='body'>{{ $post->body }}</p>
+                    <a href='/posts/create'>create</a>
                 </div>
             @endforeach
         </div>
